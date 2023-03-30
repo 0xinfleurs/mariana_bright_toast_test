@@ -6,7 +6,7 @@ import requests
 st.set_page_config(layout='wide')
 st.title("Welcome to Bright Toasts")
 st.text("Bright Toasts is a powerful model that given a description of your ideal wine gives you the perfect matches")
-st.image('ACSIE0807.JPG')
+#st.image('./header.png')
 
 element = st.empty()
 element = st.empty()
