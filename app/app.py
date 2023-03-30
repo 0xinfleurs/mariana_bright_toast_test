@@ -8,6 +8,7 @@ st.title("Welcome to Bright Toasts")
 st.text("Bright Toasts is a powerful model that given a description of your ideal wine gives you the perfect matches")
 #st.image('./header.png')
 
+st.markdown(":stars:")
 element = st.empty()
 element = st.empty()
 clicked = st.button ("Click to find your Bright Toast")
