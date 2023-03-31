@@ -27,6 +27,8 @@ if clicked:
        'Moldova', 'Morocco', 'Peru', 'India', 'Bulgaria', 'Cyprus',
        'Armenia', 'Switzerland', 'Bosnia and Herzegovina', 'Slovakia',
        'Macedonia', 'Ukraine', 'Luxembourg', 'China', 'Egypt'])
+    st.slider('Slide to select a price range',min_value=0, max_value=1000)
+    
     st.markdown(":star2: However, the description is mandatory! ")
     description  = st.text_input('Describe your ideal wine making sure to detail the look, smell, and taste.')
     st.markdown(":star2: Example of a correct wine description: Aromas include tropical fruit, broom, brimstone and dried herb. The palate isn't overly expressive, offering unripened apple, citrus and dried sage alongside brisk acidity.")
