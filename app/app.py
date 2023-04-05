@@ -15,6 +15,13 @@ element = st.empty()
 element = st.empty()
 clicked = st.button ("Click to find your Bright Toast... :sparkles:")
 #image = Image.open("C:\Users\mariana\OneDrive\Pictures\Saved Pictures\neon3.jpg")
+
+
+
+
+
+
+
 if "more_stuff" not in st.session_state:
     st.session_state.more_stuff = False
 
@@ -22,6 +29,9 @@ if clicked:
     st.session_state.more_stuff = True
 
 if st.session_state.more_stuff:
+    
+    descriptors_ = st.text_input('Describe your ideal wine making sure to detail the look, smell, and taste.')
+    st.markdown(":star2: Example of a correct wine description: Aromas include tropical fruit, broom, brimstone and dried herb. The palate isn't overly expressive, offering unripened apple, citrus and dried sage alongside brisk acidity.")
     st.markdown(":star2: These are optional parameters, don't worry if you don't know :) ")
     variety =   st.multiselect('Select a variety', ['White Blend', 'Portuguese Red', 'Pinot Gris', 'Riesling',
        'Pinot Noir', 'Tempranillo-Merlot', 'Frappato', 'Gewürztraminer',
@@ -225,6 +235,7 @@ if st.session_state.more_stuff:
     'Moldova', 'Morocco', 'Peru', 'India', 'Bulgaria', 'Cyprus',
     'Armenia', 'Switzerland', 'Bosnia and Herzegovina', 'Slovakia',
     'Macedonia', 'Ukraine', 'Luxembourg', 'China', 'Egypt'])
+    #regions= st.multiselect('Select a region(France)',[''])
     provinces = st.multiselect('Select a province', ['Sicily & Sardinia', 'Douro', 'Oregon', 'Michigan',
        'Northern Spain', 'Alsace', 'Rheinhessen', 'California', 'Mosel',
        'Other', 'Mendoza Province', 'Virginia', 'Beaujolais',
@@ -234,7 +245,7 @@ if st.session_state.more_stuff:
        'France Other', 'Tuscany', 'Burgenland', 'New York',
        'Leyda Valley', 'Piedmont', 'Stellenbosch',
        'Simonsberg-Stellenbosch', 'Walker Bay', 'Alentejano',
-       'Central Spain', 'Southwest France', 'Aconcagua Valley',
+       'Central Spain', 'Southwest France', 'Aconcaggua Valley',
        'Loncomilla Valley', 'Marlborough', 'Northeastern Italy',
        'Casablanca Valley', 'Veneto', 'Western Cape', 'Judean Hills',
        'Alentejo', 'Coastal Region', 'Rhône Valley', 'Galilee',
@@ -249,7 +260,7 @@ if st.session_state.more_stuff:
        'Crete', 'Vinho Verde', 'Idaho', 'Western Australia', 'Levante',
        'Martinborough', 'Central Otago', 'Lisboa', 'Texas',
        'Península de Setúbal', 'Australia Other', 'Tasmania', 'Franken',
-       'Ahr', 'Nahe', nan, 'Dealu Mare', 'Port', 'Darling', 'Chile',
+       'Ahr', 'Nahe', 'Dealu Mare', 'Port', 'Darling', 'Chile',
        'Südoststeiermark', 'Corinth', 'Halkidiki', 'Thrace', 'Pfalz',
        'Robertson', 'Dan', 'Northwestern Italy', 'Andalucia',
        'Awatere Valley', 'Wiener Gemischter Satz', 'Wachau',
@@ -328,19 +339,15 @@ if st.session_state.more_stuff:
        'China', 'Limnos', 'Egypt', 'Viile Timis', 'Devon Valley', 'Krk',
        'Arcadia', 'Cape Agulhas', 'Kathikas', 'Vin de Pays de Velvendo',
        'Landwein Rhein', 'Lesbos', 'Távora-Varosa', 'Neuchâtel'])
-    min_price = st.number_imput('Minimum price')
-    max_price = st.number_imput('Maximum price')
+    min_price = st.number_input('Minimum price')
+    max_price = st.number_input('Maximum price')
     wineries = st.multiselect('Select a winery',['Nicosia', 'Quinta dos Avidagos', 'Rainstorm','Mas de Pampelonne', 'Bodegas Eidosela', 'Penedo Borges'])
-    st.markdown(":star2: However, the description is mandatory! ")
-    descriptors  = st.text_input('Describe your ideal wine making sure to detail the look, smell, and taste.')
-    st.markdown(":star2: Example of a correct wine description: Aromas include tropical fruit, broom, brimstone and dried herb. The palate isn't overly expressive, offering unripened apple, citrus and dried sage alongside brisk acidity.")
+    #st.markdown(":star2: However, the description is mandatory! ")
+    #descriptors_ = st.text_input('Describe your ideal wine making sure to detail the look, smell, and taste.')
+    #st.markdown(":star2: Example of a correct wine description: Aromas include tropical fruit, broom, brimstone and dried herb. The palate isn't overly expressive, offering unripened apple, citrus and dried sage alongside brisk acidity.")
 
-
-
-
-
-
-
+#def basic_cleaning(descriptors_):
+    #
 ## Let's call our API in order to retreive a prediction
 
 #url = 'x'
