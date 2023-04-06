@@ -31,8 +31,8 @@ if clicked:
 if st.session_state.more_stuff:
     
     descriptors_ = st.sidebar.text_input('Describe your ideal wine making sure to detail the look, smell, and taste.')
-    st.markdown(":star2: Example of a correct wine description: Aromas include tropical fruit, broom, brimstone and dried herb. The palate isn't overly expressive, offering unripened apple, citrus and dried sage alongside brisk acidity.")
-    st.markdown(":star2: These are optional parameters, don't worry if you don't know :) ")
+    st.sidebar.markdown(":star2: Example of a correct wine description: Aromas include tropical fruit, broom, brimstone and dried herb. The palate isn't overly expressive, offering unripened apple, citrus and dried sage alongside brisk acidity.")
+    st.sidebar.markdown(":star2: These are optional parameters, don't worry if you don't know :) ")
     variety =   st.sidebar.multiselect('Select a variety', ['White Blend', 'Portuguese Red', 'Pinot Gris', 'Riesling',
        'Pinot Noir', 'Tempranillo-Merlot', 'Frappato', 'Gewürztraminer',
        'Cabernet Sauvignon', 'Nerello Mascalese', 'Chardonnay', 'Malbec',
