@@ -307,7 +307,8 @@ if st.session_state.more_stuff:
     variety =   st.sidebar.multiselect('Select a variety',grape_varieties)
     countries = st.sidebar.multiselect('select a country',list(provinces_dictionary.keys()))
         #regions= st.multiselect('Select a region(France)',[''])
-    provinces = st.sidebar.multiselect('Select a province', list(provinces_dictionary[countries]))
+    
+    provinces = st.sidebar.multiselect('Select a province', list(provinces_dictionary[countries[0]]))
     min_price = st.sidebar.number_input('Minimum price')
     max_price = st.sidebar.number_input('Maximum price (sky is the limit)')
     wineries = st.sidebar.multiselect('Select a winery',['Nicosia', 'Quinta dos Avidagos', 'Rainstorm','Mas de Pampelonne', 'Bodegas Eidosela', 'Penedo Borges'])
