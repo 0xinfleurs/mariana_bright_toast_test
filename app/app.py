@@ -30,7 +30,7 @@ if clicked:
 
 if st.session_state.more_stuff:
     
-    descriptors_ = st.text_input('Describe your ideal wine making sure to detail the look, smell, and taste.')
+    descriptors_ = st.sidebar.text_input('Describe your ideal wine making sure to detail the look, smell, and taste.')
     st.markdown(":star2: Example of a correct wine description: Aromas include tropical fruit, broom, brimstone and dried herb. The palate isn't overly expressive, offering unripened apple, citrus and dried sage alongside brisk acidity.")
     st.markdown(":star2: These are optional parameters, don't worry if you don't know :) ")
     variety =   st.multiselect('Select a variety', ['White Blend', 'Portuguese Red', 'Pinot Gris', 'Riesling',
@@ -340,7 +340,7 @@ if st.session_state.more_stuff:
        'Arcadia', 'Cape Agulhas', 'Kathikas', 'Vin de Pays de Velvendo',
        'Landwein Rhein', 'Lesbos', 'Távora-Varosa', 'Neuchâtel'])
     min_price = st.number_input('Minimum price')
-    max_price = st.number_input('Maximum price')
+    max_price = st.number_input('Maximum price (sky is the limit)')
     wineries = st.multiselect('Select a winery',['Nicosia', 'Quinta dos Avidagos', 'Rainstorm','Mas de Pampelonne', 'Bodegas Eidosela', 'Penedo Borges'])
     #st.markdown(":star2: However, the description is mandatory! ")
     #descriptors_ = st.text_input('Describe your ideal wine making sure to detail the look, smell, and taste.')
@@ -364,3 +364,6 @@ if st.session_state.more_stuff:
 
 #req = requests.get(url, params=params)
 # req.json()
+
+
+
