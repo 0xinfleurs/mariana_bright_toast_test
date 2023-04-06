@@ -13,7 +13,7 @@ st.text(" Bright Toast is a powerful machine learning model that given a descrip
 
 element = st.empty()
 element = st.empty()
-clicked = st.button ("Click to find your Bright Toast... :sparkles:")
+#clicked = st.button ("Click to find your Bright Toast... :sparkles:")
 #image = Image.open("C:\Users\mariana\OneDrive\Pictures\Saved Pictures\neon3.jpg")
 
 clicked_2 = st.sidebar.button("advanced optional parameters")
@@ -24,18 +24,16 @@ clicked_2 = st.sidebar.button("advanced optional parameters")
 if "more_stuff" not in st.session_state:
     st.session_state.more_stuff = False
 
-if clicked:
+if clicked_2:
     st.session_state.more_stuff = True
+    
 
 if st.session_state.more_stuff:
     
     descriptors_ = st.sidebar.text_input('Describe your ideal wine making sure to detail the look, smell, and taste.')
     st.sidebar.markdown(":star2: Example of a correct wine description: Aromas include tropical fruit, broom, brimstone and dried herb. The palate isn't overly expressive, offering unripened apple, citrus and dried sage alongside brisk acidity.")
     st.sidebar.markdown(":star2: These are optional parameters, don't worry if you don't know :) ")
-    if clicked_2:
-        st.session_state.more_stuff = True
-
-        variety =   st.sidebar.multiselect('Select a variety', ['White Blend', 'Portuguese Red', 'Pinot Gris', 'Riesling',
+    variety =   st.sidebar.multiselect('Select a variety', ['White Blend', 'Portuguese Red', 'Pinot Gris', 'Riesling',
        'Pinot Noir', 'Tempranillo-Merlot', 'Frappato', 'Gewürztraminer',
        'Cabernet Sauvignon', 'Nerello Mascalese', 'Chardonnay', 'Malbec',
        'Tempranillo Blend', 'Meritage', 'Red Blend', 'Merlot',
