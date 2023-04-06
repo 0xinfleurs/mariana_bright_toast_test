@@ -310,7 +310,7 @@ if st.session_state.more_stuff:
     if len(countries) > 0:
         provinces_total = []
         for c in range(len(countries)):
-            provinces_total.append(provinces_dictionary[countries[c]])          
+            provinces_total.append(list(provinces_dictionary[countries[c]]))          
         provinces = st.sidebar.multiselect('Select a province', provinces_total)
     min_price = st.sidebar.number_input('Minimum price')
     max_price = st.sidebar.number_input('Maximum price (sky is the limit)')
