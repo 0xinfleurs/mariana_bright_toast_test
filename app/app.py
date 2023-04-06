@@ -309,10 +309,9 @@ if st.session_state.more_stuff:
         #regions= st.multiselect('Select a region(France)',[''])
     if len(countries) > 0:
         total_provinces=[]
-        st.write('Selected',countries)
-        # for cntry in countries:
-        #     total_provinces = total_provinces.append(list(provinces_dictionary[countries[cntry]]))
-        # provinces = st.sidebar.multiselect('Select a province', total_provinces)
+        for cntry in range(len(countries)):
+            total_provinces = total_provinces.append(list(provinces_dictionary[countries[cntry]]))
+        provinces = st.sidebar.multiselect('Select a province', total_provinces)
     min_price = st.sidebar.number_input('Minimum price')
     max_price = st.sidebar.number_input('Maximum price (sky is the limit)')
     wineries = st.sidebar.multiselect('Select a winery',['Nicosia', 'Quinta dos Avidagos', 'Rainstorm','Mas de Pampelonne', 'Bodegas Eidosela', 'Penedo Borges'])
