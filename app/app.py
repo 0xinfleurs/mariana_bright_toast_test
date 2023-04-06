@@ -33,7 +33,7 @@ if st.session_state.more_stuff:
     descriptors_ = st.sidebar.text_input('Describe your ideal wine making sure to detail the look, smell, and taste.')
     st.markdown(":star2: Example of a correct wine description: Aromas include tropical fruit, broom, brimstone and dried herb. The palate isn't overly expressive, offering unripened apple, citrus and dried sage alongside brisk acidity.")
     st.markdown(":star2: These are optional parameters, don't worry if you don't know :) ")
-    variety =   st.multiselect('Select a variety', ['White Blend', 'Portuguese Red', 'Pinot Gris', 'Riesling',
+    variety =   st.sidebar.multiselect('Select a variety', ['White Blend', 'Portuguese Red', 'Pinot Gris', 'Riesling',
        'Pinot Noir', 'Tempranillo-Merlot', 'Frappato', 'Gewürztraminer',
        'Cabernet Sauvignon', 'Nerello Mascalese', 'Chardonnay', 'Malbec',
        'Tempranillo Blend', 'Meritage', 'Red Blend', 'Merlot',
@@ -227,7 +227,7 @@ if st.session_state.more_stuff:
        'Viognier-Valdiguié', 'Trollinger', 'Tsapournakos', 'Francisa',
        'Kuntra', 'Pignolo', 'Caprettone', 'Ondenc', 'Athiri',
        'Bobal-Cabernet Sauvignon'])
-    countries = st.multiselect('select a country', ['Italy', 'Portugal', 'US', 'Spain', 'France', 'Germany',
+    countries = st.sidebar.multiselect('select a country', ['Italy', 'Portugal', 'US', 'Spain', 'France', 'Germany',
     'Argentina', 'Chile', 'Australia', 'Austria', 'South Africa',
     'New Zealand', 'Israel', 'Hungary', 'Greece', 'Romania', 'Mexico',
     'Canada', 'Turkey', 'Czech Republic', 'Slovenia', 'Croatia',
@@ -236,7 +236,7 @@ if st.session_state.more_stuff:
     'Armenia', 'Switzerland', 'Bosnia and Herzegovina', 'Slovakia',
     'Macedonia', 'Ukraine', 'Luxembourg', 'China', 'Egypt'])
     #regions= st.multiselect('Select a region(France)',[''])
-    provinces = st.multiselect('Select a province', ['Sicily & Sardinia', 'Douro', 'Oregon', 'Michigan',
+    provinces = st.sidebar.multiselect('Select a province', ['Sicily & Sardinia', 'Douro', 'Oregon', 'Michigan',
        'Northern Spain', 'Alsace', 'Rheinhessen', 'California', 'Mosel',
        'Other', 'Mendoza Province', 'Virginia', 'Beaujolais',
        'Colchagua Valley', 'Southern Italy', 'Maule Valley', 'Bordeaux',
@@ -339,9 +339,9 @@ if st.session_state.more_stuff:
        'China', 'Limnos', 'Egypt', 'Viile Timis', 'Devon Valley', 'Krk',
        'Arcadia', 'Cape Agulhas', 'Kathikas', 'Vin de Pays de Velvendo',
        'Landwein Rhein', 'Lesbos', 'Távora-Varosa', 'Neuchâtel'])
-    min_price = st.number_input('Minimum price')
-    max_price = st.number_input('Maximum price (sky is the limit)')
-    wineries = st.multiselect('Select a winery',['Nicosia', 'Quinta dos Avidagos', 'Rainstorm','Mas de Pampelonne', 'Bodegas Eidosela', 'Penedo Borges'])
+    min_price = st.sidebar.number_input('Minimum price')
+    max_price = st.sidebar.number_input('Maximum price (sky is the limit)')
+    wineries = st.sidebar.multiselect('Select a winery',['Nicosia', 'Quinta dos Avidagos', 'Rainstorm','Mas de Pampelonne', 'Bodegas Eidosela', 'Penedo Borges'])
     #st.markdown(":star2: However, the description is mandatory! ")
     #descriptors_ = st.text_input('Describe your ideal wine making sure to detail the look, smell, and taste.')
     #st.markdown(":star2: Example of a correct wine description: Aromas include tropical fruit, broom, brimstone and dried herb. The palate isn't overly expressive, offering unripened apple, citrus and dried sage alongside brisk acidity.")
