@@ -10,7 +10,7 @@ st.title(":sparkler: Welcome to Bright Toast! :sparkler:")
 st.text(" Bright Toast is a powerful machine learning model that given a description of your ideal wine gives you the perfect matches for your next wine tasting! ")
 #st.image('./header.png')
 
-
+st.image("img_streamlit_1")
 element = st.empty()
 element = st.empty()
 #clicked = st.button ("Click to find your Bright Toast... :sparkles:")
@@ -222,7 +222,7 @@ grape_varieties = ['White Blend', 'Portuguese Red', 'Pinot Gris', 'Riesling',
         'Viognier-Valdiguié', 'Trollinger', 'Tsapournakos', 'Francisa',
         'Kuntra', 'Pignolo', 'Caprettone', 'Ondenc', 'Athiri',
         'Bobal-Cabernet Sauvignon']
-provinces_dictionary = {'Portugal':['Douro', 'Alentejano', 'Alentejo', 'Beira Atlantico',
+provinces_dictionary = {'Portugal':['Douro', 'Alentejano', 'Alentejo', 'Beira Atlantico',   
        'Vinho Verde', 'Tejo', 'Lisboa', 'Península de Setúbal', 'Port',
        'Dão', 'Bairrada', 'Ribatejano', 'Duriense', 'Beiras',
        'Vinho Espumante', 'Terras do Dão', 'Beira Interior', 'Minho',
