@@ -10,7 +10,7 @@ st.title(":sparkler: Welcome to Bright Toast! :sparkler:")
 st.text(" Bright Toast is a powerful machine learning model that given a description of your ideal wine gives you the perfect matches for your next wine tasting! ")
 #st.image('./header.png')
 
-st.image("img_streamlit_2")
+st.image("app\img_streamlit_2.jpg")
 element = st.empty()
 element = st.empty()
 #clicked = st.button ("Click to find your Bright Toast... :sparkles:")
